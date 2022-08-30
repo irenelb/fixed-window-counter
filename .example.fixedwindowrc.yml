@@ -5,7 +5,7 @@ mongo:
 apis:
   receiver: http://172.17.0.1:4000/receiver/_send
 fixedWindowInfo:
-  size: 3000
+  size: 20000 #20s
   maxRequest: 10
   
 
