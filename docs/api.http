@@ -1,0 +1,8 @@
+@baseUri=http://localhost:3000
+
+###
+# @name SEND
+GET {{baseUri}}/_send
+x-request-id: r_4JZbfxAYaiGY-woRvu6
+x-uid-sub: r_4JZbfxAYaiGY-woRvu6
+###

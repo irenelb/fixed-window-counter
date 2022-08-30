@@ -1,0 +1,50 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "window.title": "fixed-window${separator}${dirty}${activeEditorShort}${separator}${appName}",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["javascript", "typescript"],
+  "editor.formatOnSave": false,
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "[markdown]": {
+    "editor.formatOnSave": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/dist": true,
+    "**/coverage": true
+  },
+  "typescript.referencesCodeLens.enabled": true,
+  "appService.zipIgnorePattern": [".vscode{,/**}"],
+  "appService.deploySubpath": "",
+  "files.eol": "\n",
+  "peacock.remoteColor": "#42b883",
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#00c7b8",
+    "activityBar.activeBorder": "#945bc4",
+    "activityBar.background": "#00c7b8",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#ce00df",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "sash.hoverBorder": "#00c7b8",
+    "statusBar.background": "#009489",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#00c7b8",
+    "statusBarItem.remoteBackground": "#009489",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#009489",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#00948999",
+    "titleBar.inactiveForeground": "#e7e7e799",
+    "commandCenter.border": "#e7e7e799"
+  },
+  "peacock.color": "#009489",
+}

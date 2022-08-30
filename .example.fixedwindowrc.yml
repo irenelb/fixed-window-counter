@@ -1,0 +1,46 @@
+env: 'development' # [development , 'production']
+mongo:
+  options: {}
+  uris: 'mongodb://root:example@mongo:27017?authSource=admin'
+apis:
+  receiver: http://172.17.0.1:4000/receiver/_send
+slidingWindowInfo:
+  windowSize: 5
+  toSend:
+    - id: 'd389eh-001'
+      data: 4
+    - id: 'd389eh-002'
+      data: 6
+    - id: 'd389eh-003'
+      data: 5
+    - id: 'd389eh-004'
+      data: 7
+    - id: 'd389eh-005'
+      data: 8
+    - id: 'd389eh-006'
+      data: 45
+    - id: 'd389eh-007'
+      data: 100
+
+aemonOidcIntrospect:
+  issuers: []
+  devMode:
+    enabled: true
+    fakeUid:
+      subject: test
+      issuer: http://sso-test/auth/realms/test
+      email: test@test.it
+      familyName: Test
+      givenName: Test
+      emailVerified: true
+      token: string
+      roles: []
+      allRoles: []
+      audience: test
+      expires: 3600
+      issuedAt: -1
+      active: true
+      clientId: test
+      expiresIn: 124
+      name: test
+      username: test
