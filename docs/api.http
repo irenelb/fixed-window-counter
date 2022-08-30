@@ -2,7 +2,14 @@
 
 ###
 # @name SEND
-GET {{baseUri}}/_send
-x-request-id: r_4JZbfxAYaiGY-woRvu6
-x-uid-sub: r_4JZbfxAYaiGY-woRvu6
+POST {{baseUri}}/_send HTTP/1.1
+Content-Type: application/json
+x-uid-sub: 987698698678
+x-request-id: 56465
+
+{
+  "id":"4534534543",
+  "data":4
+}
+
 ###

@@ -1,7 +1,9 @@
+import options from '../config/options';
+
 type MapRequest = { reqNumber: number };
 
 type MapUserRequest = Record<string, MapRequest>;
-const MAX_REQ_USR = 10;
+const MAX_REQ_USR = options.snapshot().fixedWindowInfo.maxRequest;
 function fixedWindow() {
   let mapRequest: MapUserRequest = {};
 
@@ -23,7 +25,7 @@ function fixedWindow() {
 
   function checkUserWindow(sub: string) {
     const reqMap = mapRequest[sub];
-    return reqMap.reqNumber >= MAX_REQ_USR;
+    return reqMap.reqNumber > MAX_REQ_USR;
   }
 
   return { openCloseWindow, newReqPerUser, checkUserWindow };
